@@ -12,7 +12,7 @@ metadata:
   namespace: karthik-jk-tenant
 spec:
   port:
-    targetPort: 8080
+    targetPort: 3000
   tls:
     insecureEdgeTerminationPolicy: Redirect
     termination: edge

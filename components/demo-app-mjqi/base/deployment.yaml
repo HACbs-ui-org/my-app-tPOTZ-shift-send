@@ -28,17 +28,17 @@ spec:
         livenessProbe:
           httpGet:
             path: /
-            port: 8080
+            port: 3000
           initialDelaySeconds: 10
           periodSeconds: 10
         name: container-image
         ports:
-        - containerPort: 8080
+        - containerPort: 3000
         readinessProbe:
           initialDelaySeconds: 10
           periodSeconds: 10
           tcpSocket:
-            port: 8080
+            port: 3000
         resources:
           limits:
             cpu: "1"
