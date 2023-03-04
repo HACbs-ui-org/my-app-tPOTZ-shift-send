@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: demo-app-mjqi
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: demo-app-mjqi
+    app.kubernetes.io/part-of: my-app
+  name: demo-app-mjqi
+  namespace: karthik-jk-tenant
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: demo-app-mjqi
+    weight: 100
+status: {}
