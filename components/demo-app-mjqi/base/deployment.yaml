@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: demo-app-mjqi
     spec:
       containers:
-      - image: quay.io/stonesoupuicluster/uidev-user-workload@sha256:3be090458a78bd427d809fa1d3f747a2125fee5ac8c2c4e2e27e671002057bbc
+      - image: quay.io/stonesoupuicluster/uidev-user-workload@sha256:05fa7bbed83d17db3251b82f455374b09ecac940498d1cb147f9fea9c2fd009d
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
