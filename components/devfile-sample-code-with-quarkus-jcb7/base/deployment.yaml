@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-code-with-quarkus-jcb7
     spec:
       containers:
-      - image: quay.io/stonesoupuicluster/uidev-user-workload:tPOTZ-devfile-sample-code-with-quarkus-jcb7
+      - image: quay.io/stonesoupuicluster/uidev-user-workload@sha256:8799b37a39b3b9edb07b06e67d945df88e47dc14eaadf13a456b7171212f807d
         name: my-java-quarkus
         ports:
         - containerPort: 8081
